@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparación de Valor de Monedas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Comparación de Valor de Moneda</h1>
+    <p>Selecciona la moneda:</p>
+    <select id="currency">
+     
+      <option value="USD">Dólar estadounidense (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">Libra Esterlina (GBP)</option>
+      <option value="JPY">Yen Japonés (JPY)</option>
+      <option value="CAD">Dólar Canadiense (CAD)</option>
+      <option value="AUD">Dólar Australiano (AUD)</option>
+      <option value="CNY">Yuan Chino (CNY)</option>
+      <option value="INR">Rupia India (INR)</option>
+      <option value="BRL">Real Brasileño (BRL)</option>
+      <option value="ZAR">Rand Sudafricano (ZAR)</option>
+    </select>
+    <button onclick="fetchExchangeRate()">Mostrar Comparación</button>
+  </div>
+  <div id="chart-container">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
